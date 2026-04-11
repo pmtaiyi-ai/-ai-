@@ -1,14 +1,14 @@
 :root {
-  --ink: #171715;
-  --muted: #6b6861;
-  --paper: #f4f1e9;
-  --surface: #ffffff;
-  --line: #d9d0bd;
-  --red: #9e1f28;
-  --green: #1f6754;
-  --gold: #b98a36;
-  --charcoal: #20211e;
-  --shadow: 0 22px 70px rgba(25, 24, 21, 0.18);
+  --ink: #f8f1df;
+  --muted: #c8b996;
+  --paper: #0b0a08;
+  --surface: #15120e;
+  --line: rgba(218, 179, 99, 0.28);
+  --red: #d2a24d;
+  --green: #b88a3c;
+  --gold: #e7c477;
+  --charcoal: #0f0d0a;
+  --shadow: 0 26px 80px rgba(0, 0, 0, 0.48);
 }
 
 * {
@@ -22,7 +22,9 @@ html {
 body {
   margin: 0;
   color: var(--ink);
-  background: var(--paper);
+  background:
+    radial-gradient(circle at 78% 0%, rgba(231, 196, 119, 0.16), transparent 28%),
+    linear-gradient(180deg, #11100d 0%, #060504 100%);
   font-family: "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
   line-height: 1.6;
 }
@@ -47,9 +49,9 @@ img {
   gap: 24px;
   min-height: 72px;
   padding: 14px clamp(18px, 5vw, 64px);
-  background: rgba(247, 244, 236, 0.94);
+  background: rgba(10, 9, 7, 0.88);
   border-bottom: 1px solid var(--line);
-  backdrop-filter: blur(14px);
+  backdrop-filter: blur(18px);
 }
 
 .brand {
@@ -65,8 +67,8 @@ img {
   width: 38px;
   height: 38px;
   place-items: center;
-  color: #fff;
-  background: var(--red);
+  color: #17110a;
+  background: linear-gradient(135deg, #f6de9b, #b6822e);
   border-radius: 8px;
 }
 
@@ -74,12 +76,12 @@ img {
   display: flex;
   align-items: center;
   gap: 22px;
-  color: var(--muted);
+  color: rgba(248, 241, 223, 0.72);
   font-size: 15px;
 }
 
 .site-nav a:hover {
-  color: var(--red);
+  color: var(--gold);
 }
 
 .nav-toggle {
@@ -87,7 +89,7 @@ img {
   border: 1px solid var(--line);
   border-radius: 8px;
   padding: 9px 12px;
-  background: var(--surface);
+  background: #15120e;
   color: var(--ink);
   font: inherit;
 }
@@ -108,9 +110,9 @@ img {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(90deg, rgba(15, 16, 14, 0.9) 0%, rgba(15, 16, 14, 0.63) 48%, rgba(15, 16, 14, 0.2) 100%),
-    radial-gradient(circle at 72% 26%, rgba(185, 138, 54, 0.32), transparent 30%),
-    url("https://images.unsplash.com/photo-1609233722518-1d849a00c3df?auto=format&fit=crop&w=1800&q=80");
+    linear-gradient(90deg, rgba(6, 5, 4, 0.94) 0%, rgba(8, 7, 6, 0.76) 48%, rgba(8, 7, 6, 0.28) 100%),
+    radial-gradient(circle at 72% 26%, rgba(231, 196, 119, 0.22), transparent 30%),
+    url("assets/gz-pearl-view.jpg");
   background-position: center;
   background-size: cover;
   transform: scale(1.02);
@@ -139,8 +141,8 @@ img {
   position: relative;
   overflow: hidden;
   align-self: end;
-  background: rgba(255, 255, 255, 0.92);
-  border: 1px solid rgba(255, 255, 255, 0.48);
+  background: rgba(16, 13, 9, 0.9);
+  border: 1px solid rgba(231, 196, 119, 0.38);
   border-radius: 8px;
   box-shadow: var(--shadow);
 }
@@ -157,7 +159,7 @@ img {
 
 .hero-card h2 {
   margin: 0;
-  color: var(--red);
+  color: var(--gold);
   font-size: 34px;
   line-height: 1.05;
 }
@@ -171,7 +173,7 @@ img {
 .hero-card span {
   display: inline-flex;
   margin-top: 8px;
-  color: var(--green);
+  color: var(--muted);
   font-weight: 800;
 }
 
@@ -221,14 +223,15 @@ img {
 }
 
 .button.primary {
-  color: #fff;
-  background: var(--red);
-  border-color: var(--red);
+  color: #15100a;
+  background: linear-gradient(135deg, #f2d88d, #b7812e);
+  border-color: #e7c477;
 }
 
 .button.ghost {
   color: inherit;
-  background: rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(231, 196, 119, 0.34);
 }
 
 .section {
@@ -288,11 +291,11 @@ img {
 }
 
 .history {
-  background: #efe6d5;
+  background: #0d0b08;
 }
 
 .story {
-  background: var(--surface);
+  background: #12100c;
 }
 
 .story-columns {
@@ -303,8 +306,9 @@ img {
 
 .story-columns article {
   padding: 30px;
-  border-top: 4px solid var(--red);
-  background: #f7f4ec;
+  border-top: 4px solid var(--gold);
+  background: linear-gradient(180deg, #18140f, #0f0d0a);
+  border: 1px solid var(--line);
   border-radius: 8px;
 }
 
@@ -319,8 +323,8 @@ img {
 
 .heritage {
   background:
-    linear-gradient(135deg, rgba(31, 103, 84, 0.08), rgba(158, 31, 40, 0.07)),
-    var(--surface);
+    linear-gradient(135deg, rgba(231, 196, 119, 0.12), rgba(255, 255, 255, 0.02)),
+    #080706;
 }
 
 .heritage-grid {
@@ -331,7 +335,7 @@ img {
   min-height: 250px;
   padding: 26px;
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(250, 248, 242, 0.98));
+    linear-gradient(180deg, rgba(28, 23, 17, 0.98), rgba(14, 12, 9, 0.98));
 }
 
 .heritage-grid span {
@@ -340,7 +344,7 @@ img {
   height: 54px;
   place-items: center;
   color: #fff;
-  background: var(--green);
+  background: linear-gradient(135deg, #e7c477, #8a5e20);
   border-radius: 8px;
   font-weight: 900;
 }
@@ -365,8 +369,8 @@ img {
   min-height: 560px;
   border-radius: 8px;
   background:
-    linear-gradient(180deg, rgba(32, 32, 30, 0.1), rgba(32, 32, 30, 0.38)),
-    url("https://images.unsplash.com/photo-1577011235728-9d8f2f81a0d3?auto=format&fit=crop&w=1200&q=80");
+    linear-gradient(180deg, rgba(8, 7, 6, 0.18), rgba(8, 7, 6, 0.62)),
+    url("assets/hn-yellow-river.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -378,15 +382,16 @@ img {
 
 .timeline-item {
   padding: 26px;
-  background: rgba(255, 255, 255, 0.68);
-  border-left: 5px solid var(--green);
+  background: rgba(24, 20, 15, 0.82);
+  border: 1px solid var(--line);
+  border-left: 5px solid var(--gold);
   border-radius: 8px;
 }
 
 .timeline-item span,
 .event-date,
 .role {
-  color: var(--red);
+  color: var(--gold);
   font-weight: 800;
 }
 
@@ -399,11 +404,11 @@ img {
 }
 
 .events {
-  background: #fff;
+  background: #0b0a08;
 }
 
 .gallery {
-  background: var(--charcoal);
+  background: #050504;
   color: #fff;
 }
 
@@ -522,8 +527,8 @@ img {
   left: 12px;
   padding: 9px 10px;
   color: #fff;
-  background: rgba(23, 23, 21, 0.68);
-  border: 1px solid rgba(255, 255, 255, 0.22);
+  background: rgba(8, 7, 6, 0.76);
+  border: 1px solid rgba(231, 196, 119, 0.3);
   border-radius: 8px;
   font-weight: 800;
 }
@@ -542,7 +547,7 @@ img {
   grid-template-columns: minmax(280px, 0.8fr) minmax(320px, 1fr);
   gap: 34px;
   align-items: start;
-  background: #e7f0ea;
+  background: linear-gradient(135deg, #15120e, #090806);
 }
 
 .signup-form {
@@ -564,7 +569,7 @@ textarea {
   border-radius: 8px;
   padding: 12px 13px;
   color: var(--ink);
-  background: #fff;
+  background: #0b0a08;
   font: inherit;
 }
 
@@ -594,14 +599,14 @@ textarea {
 .profile-head img {
   width: 112px;
   height: 112px;
-  border: 3px solid #fff;
+  border: 3px solid rgba(231, 196, 119, 0.52);
   border-radius: 8px;
   box-shadow: 0 12px 30px rgba(23, 23, 21, 0.18);
   object-fit: cover;
 }
 
 .contact-panel h2 {
-  color: var(--red);
+  color: var(--gold);
 }
 
 .contact-meta {
@@ -613,7 +618,7 @@ textarea {
 
 .contact-meta div {
   padding: 14px;
-  background: #f8f6ef;
+  background: rgba(255, 255, 255, 0.04);
   border: 1px solid var(--line);
   border-radius: 8px;
 }
@@ -638,7 +643,7 @@ textarea {
 
 .notice p {
   margin: 4px 0 22px;
-  color: var(--red);
+  color: var(--gold);
   font-size: 24px;
   font-weight: 900;
 }
@@ -648,7 +653,7 @@ textarea {
   justify-content: space-between;
   gap: 18px;
   padding: 26px clamp(20px, 6vw, 78px);
-  background: var(--ink);
+  background: #050504;
   color: #fff;
 }
 
@@ -657,7 +662,7 @@ textarea {
   grid-template-columns: minmax(320px, 1.2fr) minmax(280px, 0.8fr);
   gap: 32px;
   align-items: center;
-  background: var(--charcoal);
+  background: #0d0b08;
   color: #fff;
 }
 
@@ -693,7 +698,7 @@ textarea {
     align-items: stretch;
     gap: 0;
     padding: 10px;
-    background: var(--surface);
+    background: #100d09;
     border: 1px solid var(--line);
     border-radius: 8px;
     box-shadow: var(--shadow);
