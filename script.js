@@ -14,3 +14,12 @@ if (toggle && nav) {
     }
   });
 }
+
+const signupForm = document.querySelector(".signup-form");
+
+if (signupForm) {
+  signupForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    alert("报名意向已记录。请联系王子加入河南人在广州老乡社群。");
+  });
+}
