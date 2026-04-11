@@ -1,352 +1,237 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>豫见广州 | 河南人在广州老乡活动站</title>
+    <title>FlavorNote | Drink Taste Journal</title>
     <meta
       name="description"
-      content="豫见广州是河南人在广州的老乡活动网站，记录乡情、互助、活动与联系人王子的社区工作。"
+      content="FlavorNote is a lightweight drink journal for recording daily drinks, taste notes, and personal preferences."
     >
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <header class="site-header">
-      <a class="brand" href="#top" aria-label="豫见广州首页">
-        <span class="brand-mark">豫</span>
-        <span>豫见广州</span>
-      </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
-        菜单
-      </button>
-      <nav id="site-nav" class="site-nav" aria-label="主导航">
-        <a href="#history">乡情历史</a>
-        <a href="#events">老乡活动</a>
-        <a href="#join">加入我们</a>
-        <a href="#contact">联系王子</a>
-      </nav>
-    </header>
-
-    <main id="top">
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-media" role="img" aria-label="广州珠江两岸城市夜景"></div>
-        <div class="hero-copy">
-          <p class="eyebrow">中原气度 · 羊城坐标</p>
-          <h1 id="hero-title">豫见广州，聚合河南人的城市力量。</h1>
-          <p>
-            从黄河岸边到珠江之畔，以乡情为纽带，以资源为桥梁，连接在穗河南人的事业、生活与公共活动。
-          </p>
-          <div class="hero-actions">
-            <a class="button primary" href="#join">加入老乡社群</a>
-            <a class="button ghost" href="#contact">联系王子</a>
-          </div>
-          <div class="hero-tags" aria-label="河南特色">
-            <span>黄河精神</span>
-            <span>少林气韵</span>
-            <span>豫菜家宴</span>
-            <span>古都文脉</span>
-          </div>
-        </div>
-        <aside class="hero-card" aria-label="联系人王子">
-          <img src="assets/wangzi-portrait.jpg" alt="联系人王子肖像">
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="FlavorNote navigation">
+        <div class="brand">
+          <span class="brand-mark">F</span>
           <div>
-            <p class="eyebrow">联系人</p>
-            <h2>王子</h2>
-            <p>河南人社群民运主席</p>
-            <span>总部地址：羊城创业园</span>
-          </div>
-        </aside>
-      </section>
-
-      <section class="intro section">
-        <div class="section-heading">
-          <p class="eyebrow">我们的定位</p>
-          <h2>让河南老乡在广州找得到人、说得上话、办得成事。</h2>
-        </div>
-        <div class="intro-grid">
-          <article>
-            <strong>乡情联络</strong>
-            <p>面向在广州工作、创业、求学和生活的河南老乡，建立稳定、友善、可信的沟通入口。</p>
-          </article>
-          <article>
-            <strong>活动组织</strong>
-            <p>组织节日聚会、城市徒步、亲子活动、创业交流、公益探访和返乡联谊。</p>
-          </article>
-          <article>
-            <strong>互助服务</strong>
-            <p>提供找工作、找客户、找场地、找同乡、法律与生活咨询等信息互通渠道。</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="heritage section" aria-labelledby="heritage-title">
-        <div class="section-heading">
-          <p class="eyebrow">河南特色</p>
-          <h2 id="heritage-title">把中原文化带到广州，把广州机会带回乡亲。</h2>
-        </div>
-        <div class="heritage-grid">
-          <article>
-            <span>黄河</span>
-            <h3>厚重与开阔</h3>
-            <p>以黄河文化的包容、坚韧和向心力，凝聚在穗河南人的共同身份。</p>
-          </article>
-          <article>
-            <span>少林</span>
-            <h3>自强与担当</h3>
-            <p>把敢闯敢拼、守信重义的精神，变成异乡创业和互助行动。</p>
-          </article>
-          <article>
-            <span>豫菜</span>
-            <h3>烟火与团圆</h3>
-            <p>胡辣汤、烩面、蒸面条和家乡味，是老乡活动里最直接的亲近感。</p>
-          </article>
-          <article>
-            <span>古都</span>
-            <h3>文化与传承</h3>
-            <p>洛阳、开封、郑州、安阳等城市记忆，成为广州河南人的精神底色。</p>
-          </article>
-        </div>
-      </section>
-
-      <section id="history" class="history section">
-        <div class="section-heading">
-          <p class="eyebrow">乡情历史</p>
-          <h2>从中原到岭南，河南人在广州写下自己的城市篇章。</h2>
-        </div>
-        <div class="history-layout">
-          <div class="history-photo" role="img" aria-label="黄河与中原文化意象"></div>
-          <div class="timeline" aria-label="河南人在广州的社区脉络">
-            <article class="timeline-item">
-              <span>古今地名</span>
-              <h3>广州也有“河南”一说</h3>
-              <p>
-                广州本地旧称里的“河南”，常指珠江以南的海珠一带；本网站所说的河南老乡，则指来自河南省、在广州生活发展的群体。
-              </p>
-            </article>
-            <article class="timeline-item">
-              <span>改革开放以后</span>
-              <h3>南下广州，寻找机会</h3>
-              <p>
-                随着珠三角制造业、商贸业和服务业快速发展，许多河南人来到广州就业创业，在批发市场、餐饮、物流、文化传媒、建筑、教育等领域扎根。
-              </p>
-            </article>
-            <article class="timeline-item">
-              <span>今日广州</span>
-              <h3>从打拼者到建设者</h3>
-              <p>
-                越来越多河南老乡在广州成家立业，也开始以商会、同乡会、公益组织和线上社群的方式互相照应，把个人奋斗连成社区力量。
-              </p>
-            </article>
-            <article class="timeline-item">
-              <span>社群未来</span>
-              <h3>从认识一个人，到链接一座城</h3>
-              <p>
-                新一代河南人在广州不只寻找工作，也在建立品牌、组织社群、参与公益、推动合作。乡情不只是回忆，更是信任、资源与行动。
-              </p>
-            </article>
+            <strong>FlavorNote</strong>
+            <small>Drink taste journal</small>
           </div>
         </div>
-      </section>
 
-      <section class="story section" aria-labelledby="story-title">
-        <div class="section-heading">
-          <p class="eyebrow">在广州的河南人</p>
-          <h2 id="story-title">他们来到广州，也把河南人的实在、韧劲和热情带到广州。</h2>
-        </div>
-        <div class="story-columns">
-          <article>
-            <h3>早期足迹</h3>
-            <p>
-              广州一直是中国南方重要的商贸城市。许多河南人顺着改革开放后的城市机会南下，在市场、工厂、档口、物流、餐饮和工程项目中站稳脚跟。最初是一张车票、一个行李包、一位熟人介绍，后来变成家庭落脚、事业扩展、朋友相帮。
-            </p>
-          </article>
-          <article>
-            <h3>行业聚合</h3>
-            <p>
-              在广州，河南老乡分布在批发贸易、直播电商、餐饮供应链、建筑装饰、教育培训、文化传媒、汽车服务、服装皮具、美业健康等领域。大家靠勤奋起步，也靠口碑建立长期合作。
-            </p>
-          </article>
-          <article>
-            <h3>乡情互助</h3>
-            <p>
-              老乡会的意义，是让初来广州的人少一点陌生，让已经扎根的人多一点连接。一次饭局、一次资源分享、一场节日聚会，都可能成为事业合作、生活支持和城市归属感的开始。
-            </p>
-          </article>
-        </div>
-      </section>
+        <nav class="side-nav" aria-label="Primary">
+          <button class="nav-item active" type="button" data-page="home">Home</button>
+          <button class="nav-item" type="button" data-page="analysis">Analysis</button>
+          <button class="nav-item" type="button" data-page="history">History</button>
+          <button class="nav-item" type="button" data-page="favorites">Favorites</button>
+          <button class="nav-item" type="button" data-page="profile">Me</button>
+        </nav>
 
-      <section class="gallery section" aria-labelledby="gallery-title">
-        <div class="section-heading">
-          <p class="eyebrow">在广州的河南人 · 照片</p>
-          <h2 id="gallery-title">老乡面孔、羊城地标、中原文脉，连成一条共同的路。</h2>
-        </div>
-        <div class="photo-grid">
-          <figure class="wide">
-            <img src="assets/wangzi-coast.jpg" alt="王子在海边的生活照片">
-            <figcaption>老乡活动主理人王子</figcaption>
-          </figure>
-          <figure>
-            <img src="assets/wangzi-portrait.jpg" alt="王子的正式肖像">
-            <figcaption>联系人王子</figcaption>
-          </figure>
-          <figure>
-            <img src="assets/gz-pearl-canton.jpg" alt="广州珠江与城市建筑">
-            <figcaption>珠江两岸</figcaption>
-          </figure>
-          <figure>
-            <img src="assets/gz-pearl-view.jpg" alt="广州珠江城市视角">
-            <figcaption>羊城地标</figcaption>
-          </figure>
-          <figure>
-            <img src="assets/gz-chen-clan.jpg" alt="广州陈家祠建筑">
-            <figcaption>岭南文脉</figcaption>
-          </figure>
-          <figure>
-            <img src="assets/gz-chen-clan-2.jpg" alt="广州陈家祠院落">
-            <figcaption>商贸广州</figcaption>
-          </figure>
-          <figure>
-            <img src="assets/hn-yellow-river.jpg" alt="河南黄河文化意象">
-            <figcaption>黄河故土</figcaption>
-          </figure>
-          <figure>
-            <img src="assets/hn-longmen.jpg" alt="洛阳龙门石窟">
-            <figcaption>洛阳龙门</figcaption>
-          </figure>
-          <figure>
-            <img src="assets/hn-shaolin.jpg" alt="河南少林寺">
-            <figcaption>少林精神</figcaption>
-          </figure>
-          <figure>
-            <img src="assets/hn-whitehorse.jpg" alt="洛阳白马寺">
-            <figcaption>白马寺</figcaption>
-          </figure>
-          <figure>
-            <img src="assets/hn-erqi.jpg" alt="郑州二七广场夜景">
-            <figcaption>郑州二七</figcaption>
-          </figure>
-          <figure>
-            <img src="assets/hn-kaifeng.jpg" alt="河南开封龙亭">
-            <figcaption>开封龙亭</figcaption>
-          </figure>
-        </div>
-      </section>
+        <section class="permission-card" aria-label="Permissions">
+          <p>Permissions</p>
+          <span>Camera · Album · Microphone</span>
+        </section>
+      </aside>
 
-      <section id="events" class="events section">
-        <div class="section-heading">
-          <p class="eyebrow">活动计划</p>
-          <h2>老乡聚起来，城市就不陌生。</h2>
-        </div>
-        <div class="event-list">
-          <article class="event-card">
-            <p class="event-date">每月第二个周六</p>
-            <h3>河南老乡茶话会</h3>
-            <p>新老朋友见面、行业互换名片、分享广州生活经验。</p>
-          </article>
-          <article class="event-card">
-            <p class="event-date">端午 / 中秋 / 春节前</p>
-            <h3>节日联谊活动</h3>
-            <p>一起包饺子、吃家乡菜、听豫剧片段、给在穗家庭一个团圆场。</p>
-          </article>
-          <article class="event-card">
-            <p class="event-date">不定期</p>
-            <h3>创业与就业互助</h3>
-            <p>发布岗位、项目合作、门店资源、法律咨询和创业经验。</p>
-          </article>
-          <article class="event-card">
-            <p class="event-date">季度公益</p>
-            <h3>老乡公益行动</h3>
-            <p>探访困难老乡、组织公益捐助、参与城市志愿服务。</p>
-          </article>
-        </div>
-      </section>
-
-      <section id="join" class="join section">
-        <div>
-          <p class="eyebrow">加入我们</p>
-          <h2>留下联系方式，下一场活动通知你。</h2>
-          <p>
-            目前表单是网页展示版。正式上线时，可以接入腾讯问卷、金数据、飞书表单或微信二维码，免写代码收集报名。
-          </p>
-        </div>
-        <form class="signup-form" action="#join" method="get">
-          <label>
-            姓名
-            <input type="text" name="姓名" placeholder="例如：张三" required>
-          </label>
-          <label>
-            微信或电话
-            <input type="text" name="联系方式" placeholder="方便活动通知" required>
-          </label>
-          <label>
-            来自河南哪里
-            <input type="text" name="家乡" placeholder="例如：郑州、洛阳、信阳">
-          </label>
-          <label>
-            想参加什么活动
-            <textarea name="活动意向" rows="4" placeholder="聚餐、创业交流、亲子活动、公益互助等"></textarea>
-          </label>
-          <button class="button primary" type="submit">提交报名意向</button>
-        </form>
-      </section>
-
-      <section id="contact" class="contact section">
-        <div class="contact-panel">
-          <div class="profile-head">
-            <img src="assets/wangzi-portrait.jpg" alt="王子肖像">
+      <main class="main">
+        <section class="page active" id="home" aria-labelledby="home-title">
+          <header class="topbar">
             <div>
-              <p class="eyebrow">联系人</p>
-              <h2>王子</h2>
-              <p class="role">河南人社群民运主席 / 老乡活动联系人</p>
+              <p class="eyebrow">Today’s Drink</p>
+              <h1 id="home-title">2:15 PM</h1>
             </div>
-          </div>
-          <p>
-            负责老乡联络、活动发起、公益互助和合作对接。围绕在穗河南人的生活、事业与公益行动，建立长期稳定的社群连接。
-          </p>
-          <dl class="contact-meta">
-            <div>
-              <dt>总部地址</dt>
-              <dd>羊城创业园</dd>
-            </div>
-            <div>
-              <dt>服务方向</dt>
-              <dd>老乡联络、资源对接、活动组织</dd>
-            </div>
-          </dl>
-          <div class="contact-links">
-            <a class="button primary" href="#join">报名联系</a>
-            <a class="button ghost" href="#events">查看活动</a>
-          </div>
-        </div>
-        <aside class="notice" aria-label="总部地址">
-          <h3>总部地址</h3>
-          <p>羊城创业园</p>
-          <h3>社群服务</h3>
-          <ul>
-            <li>河南老乡联络</li>
-            <li>活动报名与组织</li>
-            <li>创业资源对接</li>
-            <li>公益互助与城市服务</li>
-          </ul>
-        </aside>
-      </section>
+            <div class="status-pill">Taste profile live</div>
+          </header>
 
-      <section class="founder section" aria-label="王子活动形象">
-        <img src="assets/wangzi-coast.jpg" alt="王子在海边的生活照片">
-        <div>
-          <p class="eyebrow">社群主理</p>
-          <h2>让每一次相聚，都成为新的连接。</h2>
-          <p>
-            以开放、稳重、可信的方式组织老乡活动，让在广州奋斗的河南人既能找到乡音，也能找到机会。
-          </p>
-        </div>
-      </section>
-    </main>
+          <section class="drink-hero">
+            <div class="drink-visual">
+              <img id="drinkPreview" alt="Selected drink preview">
+              <div class="glass-art" id="glassArt" aria-hidden="true">
+                <span></span>
+              </div>
+            </div>
+            <div class="drink-content">
+              <label class="field-label" for="drinkName">Drink name</label>
+              <input id="drinkName" class="drink-input" type="text" value="Milk Tea" autocomplete="off">
+              <p class="auto-note" id="autoNote">Milk Tea · Sweet</p>
+              <p class="hero-copy">
+                Capture what you drink, tune the flavor, and let FlavorNote learn your personal taste.
+              </p>
+            </div>
+          </section>
 
-    <footer class="site-footer">
-      <p>© 2026 豫见广州 · 河南人在广州老乡活动站</p>
-      <p>内容初稿可继续补充真实活动照片、过往报道和联系人二维码。</p>
-    </footer>
+          <section class="control-panel" aria-labelledby="taste-title">
+            <div class="section-title">
+              <p class="eyebrow">Taste control</p>
+              <h2 id="taste-title">Mark the flavor</h2>
+            </div>
+
+            <div class="slider-group">
+              <div class="slider-row">
+                <div class="slider-copy">
+                  <span>Sweet</span>
+                  <strong id="sweetLabel">Sweet 70%</strong>
+                  <span>Bitter</span>
+                </div>
+                <input id="sweetSlider" type="range" min="0" max="100" value="70">
+              </div>
+
+              <div class="slider-row">
+                <div class="slider-copy">
+                  <span>Light</span>
+                  <strong id="richLabel">Rich 60%</strong>
+                  <span>Rich</span>
+                </div>
+                <input id="richSlider" type="range" min="0" max="100" value="60">
+              </div>
+            </div>
+
+            <div class="tag-cloud" aria-label="Flavor tags">
+              <button class="tag active" type="button">Creamy</button>
+              <button class="tag" type="button">Fresh</button>
+              <button class="tag active" type="button">Strong</button>
+              <button class="tag" type="button">Fruity</button>
+              <button class="tag" type="button">Floral</button>
+              <button class="tag" type="button">Iced</button>
+            </div>
+          </section>
+
+          <section class="insights-row">
+            <article class="insight-card">
+              <p class="eyebrow">Preference insight</p>
+              <h3 id="preferenceText">You prefer sweet drinks</h3>
+              <p id="habitText">You often choose milk-based drinks</p>
+            </article>
+            <article class="recommend-card">
+              <p class="eyebrow">Based on your taste</p>
+              <div id="recommendations" class="recommend-list">
+                <span>Latte</span>
+                <span>Fruit Tea</span>
+                <span>Cold Brew</span>
+              </div>
+            </article>
+          </section>
+
+          <section class="actions-bar" aria-label="Drink actions">
+            <label class="action-button">
+              Take Photo
+              <input id="photoInput" type="file" accept="image/*" capture="environment">
+            </label>
+            <button id="voiceBtn" class="action-button" type="button">Voice Note</button>
+            <button id="saveBtn" class="action-button primary" type="button">Save</button>
+          </section>
+
+          <section class="quick-grid" aria-label="Quick record">
+            <article>
+              <p>Last drink</p>
+              <strong id="lastDrink">Iced Latte</strong>
+              <span id="lastSaved">Saved 2 hours ago</span>
+            </article>
+            <article>
+              <p>Drinks this week</p>
+              <strong id="weekCount">5</strong>
+              <span>Light habit tracking</span>
+            </article>
+            <article>
+              <p>Most common</p>
+              <strong id="commonDrink">Milk Tea</strong>
+              <span>Personal favorite pattern</span>
+            </article>
+          </section>
+        </section>
+
+        <section class="page" id="analysis" aria-labelledby="analysis-title">
+          <header class="topbar">
+            <div>
+              <p class="eyebrow">Preference analysis</p>
+              <h1 id="analysis-title">Your taste map</h1>
+            </div>
+          </header>
+
+          <div class="analysis-layout">
+            <section class="chart-card">
+              <h2>Drink types %</h2>
+              <div class="donut" id="donutChart" aria-label="Drink type distribution"></div>
+              <div class="legend" id="typeLegend"></div>
+            </section>
+            <section class="metric-list">
+              <article>
+                <span>Sweetness preference</span>
+                <strong id="avgSweet">70%</strong>
+              </article>
+              <article>
+                <span>Richness preference</span>
+                <strong id="avgRich">60%</strong>
+              </article>
+              <article>
+                <span>Common category</span>
+                <strong id="analysisCommon">Milk Tea</strong>
+              </article>
+            </section>
+          </div>
+        </section>
+
+        <section class="page" id="history" aria-labelledby="history-title">
+          <header class="topbar">
+            <div>
+              <p class="eyebrow">History</p>
+              <h1 id="history-title">Drink timeline</h1>
+            </div>
+          </header>
+          <div class="card-flow" id="historyList"></div>
+        </section>
+
+        <section class="page" id="favorites" aria-labelledby="favorites-title">
+          <header class="topbar">
+            <div>
+              <p class="eyebrow">Favorites</p>
+              <h1 id="favorites-title">Loved drinks</h1>
+            </div>
+          </header>
+          <div class="card-flow" id="favoriteList"></div>
+        </section>
+
+        <section class="page" id="profile" aria-labelledby="profile-title">
+          <header class="topbar">
+            <div>
+              <p class="eyebrow">Me</p>
+              <h1 id="profile-title">Flavor identity</h1>
+            </div>
+          </header>
+          <section class="profile-card">
+            <div class="avatar">FN</div>
+            <div>
+              <h2>Daily drink explorer</h2>
+              <p id="profileSummary">You prefer sweet, rich, milk-based drinks.</p>
+            </div>
+          </section>
+          <section class="paywall-grid" aria-label="In-app purchase ideas">
+            <article>
+              <h3>Record Plus</h3>
+              <p>Expand drink record capacity for long-term tracking.</p>
+            </article>
+            <article>
+              <h3>Insight Pro</h3>
+              <p>Unlock enhanced preference analysis and weekly patterns.</p>
+            </article>
+            <article>
+              <h3>Voice Plus</h3>
+              <p>Turn voice notes into structured taste memories.</p>
+            </article>
+          </section>
+        </section>
+      </main>
+    </div>
+
+    <nav class="bottom-nav" aria-label="Mobile navigation">
+      <button class="nav-item active" type="button" data-page="home">Home</button>
+      <button class="nav-item" type="button" data-page="analysis">Analysis</button>
+      <button class="nav-item" type="button" data-page="history">History</button>
+      <button class="nav-item" type="button" data-page="favorites">Love</button>
+      <button class="nav-item" type="button" data-page="profile">Me</button>
+    </nav>
 
     <script src="script.js"></script>
   </body>

@@ -1,26 +1,27 @@
-# 豫见广州
+# FlavorNote
 
-河南人在广州老乡活动网站。
+FlavorNote is a lightweight drink taste journal. Users can record daily drinks, adjust taste preferences, save history, and view simple preference analysis.
 
-## 页面内容
+## Product Positioning
 
-- 乡情历史
-- 老乡活动
-- 报名入口
-- 联系人王子
-- 总部地址：羊城创业园
-- 免费部署说明
+- Drink records
+- Preference analysis
+- Lifestyle taste memory
 
-## GitHub Pages 部署
+## User Path
 
-把本仓库发布到 GitHub 后，在仓库设置里开启 Pages：
+Open → Take photo → Mark flavor → Save → View preference
 
-1. 进入仓库 Settings。
-2. 点击 Pages。
-3. Source 选择 Deploy from a branch。
-4. Branch 选择 `main`，目录选择 `/root`。
-5. 保存后等待 GitHub 生成网址。
+## Pages
 
-生成的网址通常是：
+- Home
+- Preference analysis
+- History
+- Favorites
+- Me
 
-`https://你的用户名.github.io/仓库名/`
+## Deployment
+
+Hosted with GitHub Pages:
+
+`https://pmtaiyi-ai.github.io/-ai-/`
