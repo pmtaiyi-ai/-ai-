@@ -1,19 +1,19 @@
-# FlavorNote 部署说明
+# 项目部署说明
 
-这个 App 是纯静态页面，不需要服务器、不需要数据库，适合部署到 GitHub Pages。
+GitHub Pages 当前发布的是河南人在广州老乡活动网站。
 
 ## 当前文件
 
-- `index.html`：App 页面结构
-- `styles.css`：产品视觉设计
-- `script.js`：拍照、滑条、保存、分析、收藏等交互
+- `index.html`：河南人在广州网站页面结构
+- `styles.css`：网站视觉设计
+- `script.js`：网页交互
 - `.nojekyll`：GitHub Pages 静态部署配置
 
 ## 当前线上地址
 
 `https://pmtaiyi-ai.github.io/-ai-/`
 
-## iOS App
+## FlavorNote iOS App
 
 原生 iOS 工程在：
 

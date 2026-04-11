@@ -1,38 +1,33 @@
-# FlavorNote
+# 河南人在广州网站 + FlavorNote iOS App
 
-FlavorNote is a lightweight drink taste journal. Users can record daily drinks, adjust taste preferences, save history, and view simple preference analysis.
+这个仓库包含两个部分：
 
-## Product Positioning
+1. GitHub Pages 线上首页：河南人在广州老乡活动网站。
+2. 原生 iOS 工程：FlavorNote 饮品口味记录 App。
 
-- Drink records
-- Preference analysis
-- Lifestyle taste memory
+## 河南人在广州网站
 
-## User Path
-
-Open → Take photo → Mark flavor → Save → View preference
-
-## Pages
-
-- Home
-- Preference analysis
-- History
-- Favorites
-- Me
-
-## Deployment
-
-Hosted with GitHub Pages:
+线上地址：
 
 `https://pmtaiyi-ai.github.io/-ai-/`
 
-## iOS App
+页面内容：
 
-Native SwiftUI project:
+- 河南人在广州社群介绍
+- 河南特色
+- 历史文案
+- 老乡活动
+- 在广州的河南人照片
+- 联系人王子
+- 总部地址：羊城创业园
+
+## FlavorNote iOS App
+
+原生 SwiftUI 工程：
 
 `FlavorNote-iOS/FlavorNote.xcodeproj`
 
-Implemented:
+已实现：
 
 - Home taste recording flow
 - Camera and album photo input
