@@ -25,3 +25,27 @@ Open → Take photo → Mark flavor → Save → View preference
 Hosted with GitHub Pages:
 
 `https://pmtaiyi-ai.github.io/-ai-/`
+
+## iOS App
+
+Native SwiftUI project:
+
+`FlavorNote-iOS/FlavorNote.xcodeproj`
+
+Implemented:
+
+- Home taste recording flow
+- Camera and album photo input
+- Microphone permission flow for voice notes
+- Sweet/bitter and light/rich sliders
+- Flavor tags
+- Preference analysis
+- History
+- Favorites
+- Profile and in-app purchase concept cards
+
+Build check:
+
+```bash
+xcodebuild -project FlavorNote-iOS/FlavorNote.xcodeproj -scheme FlavorNote -sdk iphonesimulator -configuration Debug -derivedDataPath FlavorNote-iOS/Build/DerivedData CODE_SIGNING_ALLOWED=NO build
+```

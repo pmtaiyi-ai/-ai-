@@ -13,6 +13,26 @@
 
 `https://pmtaiyi-ai.github.io/-ai-/`
 
+## iOS App
+
+原生 iOS 工程在：
+
+`FlavorNote-iOS/FlavorNote.xcodeproj`
+
+本地预览：
+
+1. 双击打开 `FlavorNote-iOS/FlavorNote.xcodeproj`。
+2. 在 Xcode 顶部选择 iPhone 模拟器。
+3. 点击 Run。
+
+真机安装或 TestFlight / App Store 上架需要：
+
+- Apple Developer 账号
+- Xcode 登录 Apple ID
+- 设置 Team 和 Bundle Identifier
+- 配置签名证书
+- Archive 后上传 App Store Connect
+
 ## 后续可扩展
 
 - 接入真实后端数据库
